@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24,24" CornerRadius="0">
+            <Label Text="Bienvenido a registros Carros del milenio" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Image Source="falcon.png" VerticalOptions="Center" HeightRequest="64" />
+        <Label Text="Comienza a registrar tus carros desde ahora con un fácil registro" FontSize="Title" Padding="30,10,30,10"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Registrate aquí facilmente"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        <Button Margin="0,10,0,0" Text="Registrarte"
+                Padding="30,10,30,10"
+                        Clicked="NavigatedButton_OnClicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+        <Button Margin="0,10,0,0" Text="Login"
+                Padding="30,10,30,10"
+                        Clicked="NavigateButton_OnClicked"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White" />
+    </StackLayout>
+
+</ContentPage>
